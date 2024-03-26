@@ -143,3 +143,176 @@ img {
     margin: 0 auto 48px;
   }
 }
+/* ========================================================================================================================================================
+                          progress
+======================================================================================================================================================== */
+
+.progress {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.progress-list {
+  display: flex;
+  justify-content: center;
+  gap: 72px 0;
+  flex-wrap: wrap;
+}
+
+.progress-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.progres-box-icon {
+  display: none;
+}
+
+.progress-list-item {
+  border-radius: 0px 0px 4px 4px;
+  width: 320px;
+}
+
+.progress-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+  .progress-list {
+    gap: 72px 24px;
+  }
+  .progress-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .progress {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .progress-list {
+    gap: 24px;
+  }
+  .progress-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .progres-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+  }
+  .progress-list-item {
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
+  }
+  .progress-text {
+    font-weight: 400;
+  }
+}
+
+/* ========================================================================================================================================================
+                          team
+======================================================================================================================================================== */
+
+.team .container {
+  padding: 0 42px;
+}
+
+.team {
+  background: #f4f4fd;
+  padding: 96px 0;
+}
+.title-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 72px;
+  flex-wrap: wrap;
+}
+.team-item {
+  width: 236px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  row-gap: 48px;
+}
+.team-title-position {
+  padding: 32px 0;
+}
+
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+
+/* Потрібно розібратися з відступом правим лівим у іконок
+ та підключити зображення для 
+для всіх екранів */
+.team-list-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+.team-svg {
+  fill: #f4f4fd;
+}
+.team-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link-icon:hover {
+  background-color: #404bbf;
+}
+
+.team-link-icon:focus {
+  background-color: #404bbf;
+}

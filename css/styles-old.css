@@ -223,25 +223,25 @@ img {
 
 /*-----------========= progress ========----------*/
 
-.progress {
+/* .progress {
   padding-top: 120px;
   padding-bottom: 120px;
-}
+} */
 
 .progress-list {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   gap: 24px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 
 .progress-title {
-  font-weight: 500;
+  /* font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
+  color: #2e2f42; */
+  /* margin-bottom: 8px; */
 }
 
 /* ========svg-progress============ */
@@ -250,38 +250,37 @@ img {
 }
 
 .progres-box-icon {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
   border: 1px solid #8e8f99;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
 }
 
 .progress-list-item {
-  border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 72px) / 4);
+  /* border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4); */
 }
 
-.progress-text {
+/* .progress-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
+} */
 
 /*-----------========= team ========----------*/
 
 .team {
-  background: #f4f4fd;
+  /* background: #f4f4fd; */
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-.title-team {
+/* .title-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -290,28 +289,28 @@ img {
   color: #2e2f42;
   text-transform: capitalize;
   margin-bottom: 72px;
-}
+} */
 
 .team-item {
   width: calc((100% - 3 * 24px) / 4);
-  border-radius: 0px 0px 4px 4px;
+  /* border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  row-gap: 48px;
+  row-gap: 48px; */
 }
 
 .team-list {
-  display: flex;
+  /* display: flex; */
   gap: 24px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .team-title-position {
   padding: 32px 0;
 }
 
-.team-subtitle {
+/* .team-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -319,30 +318,30 @@ img {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
-}
+} */
 
-.team-text {
+/* .team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-}
+} */
 
-.team-list-icon {
+/* .team-list-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
   margin-top: 8px;
-}
+} */
 
-.team-svg {
+/* .team-svg {
   fill: #f4f4fd;
-}
+} */
 
-.team-link-icon {
+/* .team-link-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -362,7 +361,7 @@ img {
 
 .team-link-icon:focus {
   background-color: #404bbf;
-}
+} */
 
 /*-----------========= portfolio ========----------*/
 
