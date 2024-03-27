@@ -54,11 +54,165 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
+
+/* ========================================================================================================================================================
+                                  header
+======================================================================================================================================================== */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.cont-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  padding: 16px 0;
+}
+
+.color-logo {
+  color: #2e2f42;
+}
+.nav-list {
+  display: none;
+}
+
+.contact {
+  display: none;
+}
+
+.menu-nav-btn {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.menu-nav-icon {
+  fill: #2f2f37;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+  .nav-item:hover {
+    color: #404bbf;
+  }
+  .nav-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-item.current {
+    color: #404bbf;
+  }
+  .nav-item.current::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+  }
+  .nav-item:focus {
+    color: #404bbf;
+  }
+
+  .nav-item:active {
+    color: #404bbf;
+  }
+
+  .contact {
+    display: block;
+    margin-left: auto;
+  }
+
+  .contact-link:hover {
+    color: #404bbf;
+  }
+
+  .contact-link:focus {
+    color: #404bbf;
+  }
+
+  .contact {
+    font-style: normal;
+  }
+
+  .contact-list {
+    display: block;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .contact-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-nav-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .logo {
+    margin-right: 76px;
+  }
+  .contact {
+    margin-left: auto;
+  }
+  .contact-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+
 /* ========================================================================================================================================================
                              solutions
 ======================================================================================================================================================== */
@@ -230,7 +384,7 @@ img {
 ======================================================================================================================================================== */
 
 .team .container {
-  padding: 0 42px;
+  padding: 0 28px;
 }
 
 .team {
@@ -253,7 +407,7 @@ img {
   flex-wrap: wrap;
 }
 .team-item {
-  width: 236px;
+  width: 262px;
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -282,8 +436,7 @@ img {
   color: #434455;
 }
 
-/* Потрібно розібратися з відступом правим лівим у іконок
- та підключити зображення для 
+/*підключити зображення для 
 для всіх екранів */
 .team-list-icon {
   display: flex;
@@ -292,6 +445,7 @@ img {
   gap: 24px;
   margin-top: 8px;
 }
+
 .team-svg {
   fill: #f4f4fd;
 }
@@ -307,6 +461,7 @@ img {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: o 8px;
 }
 
 .team-link-icon:hover {
@@ -315,4 +470,29 @@ img {
 
 .team-link-icon:focus {
   background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .team .container {
+    padding: 0 108px;
+  }
+  .team-list {
+    gap: 64px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team .container {
+    padding: 0 16px;
+  }
+  .team-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .team-list {
+    gap: 24px;
+  }
 }
