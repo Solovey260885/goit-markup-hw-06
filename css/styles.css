@@ -513,7 +513,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 8px;
+  margin: 0 auto 8px;
 }
 .progres-box-icon {
   display: none;
@@ -521,7 +521,7 @@ img {
 
 .progress-list-item {
   border-radius: 0px 0px 4px 4px;
-  width: 320px;
+  width: 100%;
 }
 
 .progress-text {
@@ -535,6 +535,9 @@ img {
 @media screen and (min-width: 768px) {
   .progress-list {
     gap: 72px 24px;
+  }
+  .progress-title {
+    display: flex;
   }
   .progress-list-item {
     width: calc((100% - 24px) / 2);
@@ -601,7 +604,7 @@ img {
   flex-wrap: wrap;
 }
 .team-item {
-  width: 262px;
+  width: 264px;
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -728,16 +731,17 @@ img {
 
 .portfolio-item {
   width: 288px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover {
+/* .portfolio-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: #fff;
-}
+} */
 
 .portfolio-cover-wrap {
   position: relative;
@@ -775,16 +779,26 @@ img {
 
 @media screen and (min-width: 768px) {
   .portfolio-list {
-    gap: 24px;
+    gap: 30px;
+    row-gap: 72px;
   }
   .portfolio-item {
-    width: calc((100% - 24px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
+  .portfolio-list {
+    gap: 24px;
+    row-gap: 48px;
+  }
   .portfolio-item {
     width: calc((100% - 48px) / 3);
+    box-shadow: none;
+  }
+  .portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 }
 
@@ -975,6 +989,8 @@ img {
 
   .container-footer {
     padding: 0 16px;
+    gap: 0px;
+    row-gap: 72px;
   }
   .footer-first-block {
     margin-right: 120px;
